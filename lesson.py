@@ -7,7 +7,7 @@ async def python_lesson(
     context: ContextTypes.DEFAULT_TYPE
 ):
 
-    lesson = (
+    await update.message.reply_text(
         "🐍 Python Lesson 1\n\n"
 
         "📚 Topic: print()\n\n"
@@ -15,7 +15,7 @@ async def python_lesson(
         "💡 print() kya hota hai?\n\n"
 
         "Python mein print() ka use "
-        "screen par koi text, number ya value "
+        "screen par text, number ya value "
         "dikhane ke liye hota hai.\n\n"
 
         "🧠 Example:\n"
@@ -24,7 +24,7 @@ async def python_lesson(
         "Output:\n"
         "Hello World\n\n"
 
-        "🔹 Ek aur example:\n"
+        "🔹 Example:\n"
         "print(5)\n\n"
 
         "Output:\n"
@@ -40,5 +40,3 @@ async def python_lesson(
         "Apne words mein batao:\n"
         "print() ka use kis liye hota hai?"
     )
-
-    await update.message.reply_text(lesson)
